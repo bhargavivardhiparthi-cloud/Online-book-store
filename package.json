@@ -1,0 +1,14 @@
+{
+  "name": "bookstore-root",
+  "version": "1.0.0",
+  "description": "MERN Bookstore Application",
+  "scripts": {
+    "server": "npm run dev --prefix server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "dependencies": {
+    "concurrently": "^8.0.1"
+  }
+}
